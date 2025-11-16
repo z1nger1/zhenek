@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты - Lumière Фотостудия</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -44,20 +45,20 @@
                     <div class="contact-info">
                         <h2>Наша студия</h2>
                         <div class="contact-item">
-                            <h3>Адрес</h3>
+                            <h3><i class="fas fa-map-marker-alt"></i> Адрес</h3>
                             <p>г. Москва, ул. Фотографов, 15</p>
                             <p>Ближайшее метро: "Фотостудийная"</p>
                         </div>
                         <div class="contact-item">
-                            <h3>Телефон</h3>
+                            <h3><i class="fas fa-phone"></i> Телефон</h3>
                             <p>+7 (495) 123-45-67</p>
                         </div>
                         <div class="contact-item">
-                            <h3>Email</h3>
+                            <h3><i class="fas fa-envelope"></i> Email</h3>
                             <p>info@lumiere.ru</p>
                         </div>
                         <div class="contact-item">
-                            <h3>Режим работы</h3>
+                            <h3><i class="fas fa-clock"></i> Режим работы</h3>
                             <p>Пн-Пт: 9:00 - 21:00</p>
                             <p>Сб-Вс: 10:00 - 20:00</p>
                         </div>
@@ -110,11 +111,15 @@
         <section class="map">
             <div class="container">
                 <h2>Как нас найти</h2>
-                <div class="map-placeholder">
-                    <!-- Здесь будет карта -->
-                    <div class="map-image">
-                        <img src="https://via.placeholder.com/1200x400" alt="Карта расположения фотостудии">
-                    </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A063a3605e8e139030e2e4f30de797f8f0abf956c82a721dc18a15ccfca6ee2af&amp;source=constructor" 
+                        width="100%" 
+                        height="716" 
+                        frameborder="0"
+                        style="border:0; border-radius: var(--border-radius);"
+                        allowfullscreen="">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -133,16 +138,16 @@
                 <div class="footer-links">
                     <h3>Быстрые ссылки</h3>
                     <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="portfolio.html">Портфолио</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-images"></i> Портфолио</a></li>
+                        <li><a href="contacts.html"><i class="fas fa-envelope"></i> Контакты</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h3>Контакты</h3>
-                    <p>г. Москва, ул. Фотографов, 15</p>
-                    <p>+7 (495) 123-45-67</p>
-                    <p>info@lumiere.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Фотографов, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@lumiere.ru</p>
                 </div>
             </div>
             <div class="footer-bottom">
