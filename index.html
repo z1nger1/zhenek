@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière - Фотостудия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Lumière</h1>
+                    <span>Фотостудия</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Создаем незабываемые моменты</h2>
+                    <p class="hero-text">Профессиональная фотосъемка в современной студии с идеальной атмосферой</p>
+                    <a href="contacts.html" class="btn btn-primary">Записаться на съемку</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">📷</div>
+                        <h3>Портретная съемка</h3>
+                        <p>Индивидуальные и групповые портреты, подчеркивающие вашу индивидуальность</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💍</div>
+                        <h3>Свадебная фотосессия</h3>
+                        <p>Запечатлим самые трогательные моменты вашего особенного дня</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">👶</div>
+                        <h3>Детская фотосъемка</h3>
+                        <p>Яркие и естественные фотографии ваших детей в комфортной обстановке</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">👔</div>
+                        <h3>Бизнес-портреты</h3>
+                        <p>Профессиональные фото для корпоративных нужд и личного бренда</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <div class="advantages-list">
+                    <div class="advantage-item">
+                        <h3>Современное оборудование</h3>
+                        <p>Используем профессиональную технику ведущих брендов</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h3>Опытные фотографы</h3>
+                        <p>Наша команда - это профессионалы с многолетним опытом</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h3>Уютная атмосфера</h3>
+                        <p>Просторная студия с комфортными зонами для отдыха</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h3>Гибкие условия</h3>
+                        <p>Предлагаем различные пакеты услуг под ваш бюджет</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <h2>Lumière</h2>
+                        <span>Фотостудия</span>
+                    </div>
+                    <p>Создаем незабываемые моменты с 2015 года</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Фотографов, 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@lumiere.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Lumière Фотостудия. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню для главной страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

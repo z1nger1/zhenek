@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Lumière Фотостудия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Lumière</h1>
+                    <span>Фотостудия</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="portfolio.html" class="active">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1 class="page-title">Наше портфолио</h1>
+                <p>Лучшие работы наших фотографов в разных жанрах</p>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Все работы</button>
+                    <button class="filter-btn" data-filter="portrait">Портреты</button>
+                    <button class="filter-btn" data-filter="wedding">Свадьбы</button>
+                    <button class="filter-btn" data-filter="family">Семейные</button>
+                    <button class="filter-btn" data-filter="business">Бизнес</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="portrait">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x500" alt="Портретная фотосессия">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Индивидуальный портрет</h3>
+                            <p>Студийная съемка с профессиональным светом</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x500" alt="Свадебная фотосессия">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Свадебный день</h3>
+                            <p>Трогательные моменты церемонии и празднования</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="family">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x500" alt="Семейная фотосессия">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Семейный портрет</h3>
+                            <p>Теплая атмосфера семейной фотосессии</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="business">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x500" alt="Бизнес-портрет">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Корпоративный портрет</h3>
+                            <p>Профессиональные фото для делового портфолио</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="portrait">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x500" alt="Творческий портрет">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Творческий портрет</h3>
+                            <p>Арт-съемка с нестандартными образами</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="wedding">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x500" alt="Предсвадебная съемка">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Love Story</h3>
+                            <p>Романтическая предсвадебная фотосессия</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <h2>Lumière</h2>
+                        <span>Фотостудия</span>
+                    </div>
+                    <p>Создаем незабываемые моменты с 2015 года</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p>г. Москва, ул. Фотографов, 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@lumiere.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Lumière Фотостудия. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript для страницы портфолио
+        document.addEventListener('DOMContentLoaded', function() {
+            // Мобильное меню
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            }
+            
+            // Фильтрация портфолио
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            if (filterButtons.length > 0) {
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // Убираем активный класс у всех кнопок
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        // Добавляем активный класс текущей кнопке
+                        this.classList.add('active');
+                        
+                        const filterValue = this.getAttribute('data-filter');
+                        
+                        // Фильтруем элементы портфолио
+                        portfolioItems.forEach(item => {
+                            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                                item.style.display = 'block';
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'scale(1)';
+                                }, 100);
+                            } else {
+                                item.style.opacity = '0';
+                                item.style.transform = 'scale(0.8)';
+                                setTimeout(() => {
+                                    item.style.display = 'none';
+                                }, 300);
+                            }
+                        });
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
